@@ -1,0 +1,38 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(11, 1fr);
+    grid-template-areas: 
+    ". . . . hd hd hd hd . . . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . bd bd bd bd bd bd bd bd . ."
+    ". . . . . . . hm hm hm . ."
+    ;
+    gap: 5px;
+}
+
+.box{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.header{
+    grid-area: hd;
+}
+
+.textBoard{
+    grid-area: bd;
+}
+
+.home{
+    grid-area: hm;
+}
